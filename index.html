@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dificuldade">
+    <h2>Escolha a dificuldade</h2>
+    <button onclick="setDificuldade('facil')">Fácil</button>
+    <button onclick="setDificuldade('medio')">Médio</button>
+    <button onclick="setDificuldade('dificil')">Difícil</button>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <h1><img src = "Logo.png"></h1>
+    <div id="icone"></div>
+    <div id="pergunta"></div>
+    <div id="opcoes"></div>
+    <div id="cronometro">Tempo: <span id="tempo">30</span>s</div>
+    <div id="pontuacao">Pontos: 0</div>
+  </div>
+
+  <div id="resultado" style="display: none;"></div>
+
+  <audio id="somAcerto" src="som-acerto.mp3"></audio>
+  <audio id="somErro" src="som-erro.mp3"></audio>
+
+  <script src="perguntas.js"></script>
+  <script src="perguntas2.js"></script>
+  <script src="perguntas3.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
